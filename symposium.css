@@ -39,16 +39,26 @@ header {
 	padding-bottom: 10px;
 }
 
+p {
+	margin-bottom: 10px;
+}
+
 .info {
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 20px;
 }
+
 .info img {
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
   width: 100%;
+}
+
+.blocks {
+	padding: 10px;
+	margin: 10px;
 }
 
 .footer {
@@ -70,10 +80,24 @@ header {
 		font-size: var(--large);
 	}
 
-	h1 {
+	header h1 {
 		font-size: var(--large);
 		text-align: left;
 		margin-bottom:15px;
+	}
+
+	.main-content h1 {
+		font-size: var(--normal);
+		text-align: left;
+		margin-bottom:15px;		
+	}
+
+	.blocks h1 {
+		font-size: var(--small);
+		text-align: center;
+		font-weight: bold;
+		color: var(--uc-blue);
+		margin-bottom: 5px;
 	}
 
 	h2 {
@@ -85,6 +109,10 @@ header {
 		padding-top: 10px;
 	}
 
+	.blocks {
+		font-size: var(--small);
+	}
+
 }
 
 /* Large viewport: banner side-by-side image and text */
@@ -94,10 +122,24 @@ header {
 		font-size: var(--Large);
 	}
 
-	h1 {
+	header h1 {
 		font-size: var(--Large);
 		text-align: left;
 		margin-bottom:20px;
+	}
+
+	.main-content h1 {
+		font-size: var(--Normal);
+		text-align: left;
+		margin-bottom:15px;		
+	}
+	
+	.blocks h1 {
+		font-size: var(--Small);
+		text-align: center;
+		font-weight: bold;
+		color: var(--uc-blue);
+		margin-bottom: 5px;
 	}
 
 	h2 {
@@ -107,6 +149,10 @@ header {
 		display: block;
 		margin: 0px;
 		padding-top: 10px;
+	}
+
+	.blocks {
+		font-size: var(--Small);
 	}
 
 }
