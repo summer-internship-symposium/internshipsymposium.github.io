@@ -1,0 +1,187 @@
+:root {
+	--uc-teal: #00C6D7;
+	--uc-blue: #00629B;
+	--uc-gold: #FFCD00;
+	--uc-orange: #FC8900;
+	--uc-grey: #B6B1A9;
+	--Large: 30px;
+	--large: 16px;
+	--Normal: 20px;
+	--normal: 18px;
+	--Small: 16px;
+	--small: 14px
+}
+
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+	background-color: var(--uc-blue);
+}
+
+.navbar .nav-item, .nav-link{
+	font-weight: bold;
+	color: white;
+	display: inline;
+	margin-right: 2px;
+	margin-left: 2px;
+}
+
+.navbar ul{
+	display: inline;
+}
+
+#myCarousel {
+	margin: 10px;
+}
+
+.main-content {
+	padding: 10px;
+	margin: 0;
+	width: 100%;
+}
+
+header {
+	position: sticky;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	letter-spacing: 2pt;
+	color: var(--uc-blue);
+
+	padding: 5px;
+
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-bottom: 10px;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+.info {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+}
+
+.info img {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+hr {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border: 0;
+	border-top: 3px solid var(--uc-blue);
+}
+
+.blocks {
+	padding: 10px;
+	margin: 10px;
+}
+
+
+.footer {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: var(--uc-blue);
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	padding: 10px;
+	margin-top: 10px;
+  }
+
+/* Mobile: banner image above centered text */
+@media screen and (max-width: 850px) {
+	
+	header {
+		font-size: var(--large);
+	}
+
+	header h1 {
+		font-size: var(--large);
+		font-weight: bold;
+		text-align: left;
+		padding-top: 10px;
+		display: inline;
+	}
+
+	.main-content h1 {
+		font-size: var(--normal);
+		text-align: left;
+		margin-bottom:15px;		
+	}
+
+	.blocks h1 {
+		font-size: var(--small);
+		text-align: left;
+		font-weight: bold;
+		color: var(--uc-blue);
+		margin-bottom: 5px;
+	}
+
+	h2 {
+		font-size: var(--small);
+		text-align: left;
+		font-weight: bold;
+		display: block;
+		margin: 0px;
+		padding-top: 10px;
+	}
+
+	.blocks {
+		font-size: var(--small);
+	}
+
+}
+
+/* Large viewport: banner side-by-side image and text */
+@media screen and (min-width: 850px) {
+
+	header {
+		font-size: var(--Large);
+	}
+	header h1 {
+		font-size: var(--Large);
+		text-align: left;
+		padding-top: 40px;
+		display: inline;
+	}
+
+	header .shorten {
+		display: none;
+	}	
+
+	.main-content h1 {
+		font-size: var(--Normal);
+		text-align: left;
+		margin-bottom:15px;		
+	}
+	
+	.blocks h1 {
+		font-size: var(--Small);
+		text-align: left;
+		font-weight: bold;
+		color: var(--uc-blue);
+		margin-bottom: 5px;
+	}
+
+	h2 {
+		font-size: var(--Small);
+		text-align: left;
+		font-weight: bold;
+		display: block;
+		margin: 0px;
+		padding-top: 10px;
+	}
+
+	.blocks {
+		font-size: var(--Small);
+	}
+
+}
