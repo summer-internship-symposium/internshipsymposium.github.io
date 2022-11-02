@@ -18,9 +18,13 @@
 	background-color: var(--uc-blue);
 }
 
-.navbar .nav-item, .navbar-collapse, .navbar-toggler, .navbar-toggler-icon{
+.navbar .nav-item, .navbar-collapse, .navbar-toggler, .navbar-toggler-icon, .nav-link{
 	color: white;
 	font-weight: bold;
+}
+
+.navbar ul{
+	display: inline;
 }
 
 .main-content {
@@ -60,10 +64,18 @@ p {
   width: 100%;
 }
 
+hr {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border: 0;
+	border-top: 3px solid var(--uc-blue);
+}
+
 .blocks {
 	padding: 10px;
 	margin: 10px;
 }
+
 
 .footer {
 	left: 0;
@@ -86,6 +98,7 @@ p {
 
 	header h1 {
 		font-size: var(--large);
+		font-weight: bold;
 		text-align: left;
 		padding-top: 10px;
 		display: inline;
@@ -99,7 +112,7 @@ p {
 
 	.blocks h1 {
 		font-size: var(--small);
-		text-align: center;
+		text-align: left;
 		font-weight: bold;
 		color: var(--uc-blue);
 		margin-bottom: 5px;
@@ -145,7 +158,7 @@ p {
 	
 	.blocks h1 {
 		font-size: var(--Small);
-		text-align: center;
+		text-align: left;
 		font-weight: bold;
 		color: var(--uc-blue);
 		margin-bottom: 5px;
