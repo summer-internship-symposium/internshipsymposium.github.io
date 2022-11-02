@@ -4,6 +4,7 @@
 	--uc-gold: #FFCD00;
 	--uc-orange: #FC8900;
 	--uc-grey: #B6B1A9;
+	--dark-grey: #57595b;
 	--Large: 30px;
 	--large: 16px;
 	--Normal: 20px;
@@ -38,6 +39,7 @@
 	padding: 10px;
 	margin: 0;
 	width: 100%;
+	color: var(--dark-grey);
 }
 
 header {
