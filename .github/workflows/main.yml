@@ -1,0 +1,34 @@
+name: Deploy to internshipsymposium.ucsd.edu
+
+on:
+  # NOTE(joe): can uncomment these to always deploy on each commit.
+  # For now, need to go to the Actions tab and manually deploy
+  # (Makes it easier to use github.io for testing)
+  # push:
+  #  branches: [ "main" ]
+  # pull_request:
+  #  branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      # Runs a single command using the runners shell
+      - name: Copy to internshipsymposium.ucsd.edu
+        env:
+          SIS_SSH_KEY: ${{ secrets.SIS_RSA }}
+          KNOWN_HOSTS: |
+            internshipsymposium.ucsd.edu ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEB2HvBam4qDfGhl+PUISjPmpxalYAHeH7vZbWYm2jYQhPKmPScMcUe2IYdpAIeNo4MODfJ6u5uFBkkoUdYXF7s=
+            internshipsymposium.ucsd.edu ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDtPbzP0WBUGU6BVWgep8OCegfe7u6CjiQHK+KTDufRLN2eXDVtEv+dZLBbytVQikMgrZZIjpzfMZpJfMlUqZZhtY/QA6dAjbAiB3gvAeQLONT9yZM1dO/cH8RR/ty+HaYxWiG0alfk4dx4iWgC/92iHG3+PZ/4PN5sPwtow2gb6CoUIPTNqD1RDpQqPUfP2+X5rj9fydpVXiK5mZ7LWugy+axFXJR9QkggDXZHjuXPaSRsHWh4dElY+azwuzGYzLIwQTISLCd2rbZcVeWiIHfO89orGjD/MA4yYIBOjKJCxyExgV2sR+5ZfqOiR9xzfTS+T23Uz1yoUkhwsUlzV63h
+            internshipsymposium.ucsd.edu ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIECgXIukY9c3ns59a5vmlWEXlgqdeOEfPdg5sGg4u6d
+        run: |
+          echo "$SIS_SSH_KEY" > ~/id_rsa_sis
+          echo "$KNOWN_HOSTS" > ~/known_hosts
+          chmod 600 ~/id_rsa_pace
+          scp -o UserKnownHostsFile=~/known_hosts -i ~/id_rsa_sis -r ./* internshipsymposium@internshipsymposium.ucsd.edu:~/htdocs/
