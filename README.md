@@ -1,1 +1,0 @@
-# internshipsymposium.github.io
