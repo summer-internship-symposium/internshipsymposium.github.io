@@ -21,6 +21,7 @@
 
 .navbar .nav-item, .nav-link{
 	font-weight: bold;
+	font-size: var(--small);
 	color: white;
 	display: inline;
 	margin-right: 2px;
@@ -80,6 +81,10 @@ hr {
 	border-top: 3px solid var(--uc-blue);
 }
 
+#myCarousel img {
+	height: 400px;
+}
+
 .blocks {
 	padding: 10px;
 	margin: 10px;
@@ -119,6 +124,10 @@ hr {
 		margin-bottom:15px;		
 	}
 
+	#myCarousel img {
+		height: 200px;
+	}
+
 	.blocks h1 {
 		font-size: var(--small);
 		text-align: left;
@@ -136,8 +145,15 @@ hr {
 		padding-top: 10px;
 	}
 
+	p {
+		font-size: var(--small);
+		text-align: left;
+	}
+
 	.blocks {
 		font-size: var(--small);
+		margin: 0px;
+		padding: 0px;
 	}
 
 }
@@ -180,6 +196,11 @@ hr {
 		display: block;
 		margin: 0px;
 		padding-top: 10px;
+	}
+
+	p {
+		font-size: var(--Small);
+		text-align: left;
 	}
 
 	.blocks {
