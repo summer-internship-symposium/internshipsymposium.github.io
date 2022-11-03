@@ -17,12 +17,4 @@ The script in [.github/workflows](.github/workflows) is responsible for copying 
 
 ### Understanding [.github/workflows/main.yml](.github/workflows/main.yml): 
 
-The environment variables are set so that files can be copied to the internshipsymposium.ucsd.edu server automatically
-(without entering the password each time). To set this up, a public/private rsa key pair is needed.
-1. Locally (e.g. in Terminal), run `ssh-keygen` and (when prompted) enter full path for file to save key
-e.g. `/Users/username/.ssh/sis_rsa` 
-and do not enter a passphrase (so that action can run without user input)
-2. 
-
-To deploy, use the Actions interface:
 
