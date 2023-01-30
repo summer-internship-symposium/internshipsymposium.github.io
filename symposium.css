@@ -120,6 +120,8 @@ hr {
 
 	.main-content h1 {
 		font-size: var(--normal);
+		font-weight: bold;
+		color: var(--uc-blue);
 		text-align: left;
 		margin-bottom:15px;		
 	}
@@ -177,6 +179,8 @@ hr {
 
 	.main-content h1 {
 		font-size: var(--Normal);
+		font-weight: bold;
+		color: var(--uc-blue);
 		text-align: left;
 		margin-bottom:15px;		
 	}
