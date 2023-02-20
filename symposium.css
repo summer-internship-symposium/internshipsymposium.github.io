@@ -12,7 +12,8 @@
 	--Medium: 18px;
 	--medium: 16px;
 	--Small: 16px;
-	--small: 14px
+	--small: 14px;
+	--assignmentprompt: "In your writing be honest,  empathetic, and analytical about your experiences. Remember: Each weekly post should have quick notes (bullet points are fine) and a deeper reflection (at least 300 words, but more is fine). The title of each post should include your name, group name, and the week number.";	
 }
 
 .navbar {
@@ -74,6 +75,17 @@ p {
   padding-left: 10px;
   padding-right: 10px;
   width: 100%;
+}
+
+.alert {
+  color: red;
+  font-weight: bolder;
+}
+
+.tagline::after {
+  content: var(--assignmentprompt);
+  color: var(--uc-blue);
+  font-style: italic;
 }
 
 hr {
