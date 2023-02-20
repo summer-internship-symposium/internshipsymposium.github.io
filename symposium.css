@@ -9,6 +9,8 @@
 	--large: 16px;
 	--Normal: 20px;
 	--normal: 18px;
+	--Medium: 18px;
+	--medium: 16px;
 	--Small: 16px;
 	--small: 14px
 }
@@ -81,6 +83,10 @@ hr {
 	border-top: 3px solid var(--uc-blue);
 }
 
+dt {
+	color: var(--uc-orange);
+}
+
 #myCarousel img {
 	height: 400px;
 }
@@ -139,12 +145,20 @@ hr {
 	}
 
 	h2 {
-		font-size: var(--small);
+		font-size: var(--medium);
 		text-align: left;
 		font-weight: bold;
 		display: block;
 		margin: 0px;
 		padding-top: 10px;
+	}
+
+	h3 {
+		font-size: var(--small);
+		text-align: right;
+		font-weight: bold;
+		display: block;
+		margin: 15px;
 	}
 
 	p {
@@ -194,12 +208,20 @@ hr {
 	}
 
 	h2 {
-		font-size: var(--Small);
+		font-size: var(--Medium);
 		text-align: left;
 		font-weight: bold;
 		display: block;
 		margin: 0px;
 		padding-top: 10px;
+	}
+
+	h3 {
+		font-size: var(--Small);
+		text-align: right;
+		font-weight: bold;
+		display: block;
+		margin: 15px;
 	}
 
 	p {
