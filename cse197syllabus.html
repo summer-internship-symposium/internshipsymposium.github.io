@@ -7,9 +7,12 @@
     <title>CSE 191 Syllabus</title>
 	<link rel="icon" href="images/welcome.jpg">
     <!-- Bootstrap -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"></script>
-	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="/bootstrap-4.0.0-dist/css/bootstrap.min.css"></script>
+
+
     <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css">
     <link rel="stylesheet" href="symposium.css">
@@ -43,15 +46,183 @@
 		<div class="row no-gutters justify-content-around align-content-center info">
 		
 			<a name="Apply"></a>
-			<div tabindex="1" class="col-sm-12 no-gutters">
+            <div tabindex="5" class="col-sm-12 no-gutters">
 				<h1>Apply to CSE 197</h1>
-                <h2>Eligibility checklist</h2>
-                <h2>For Academic Year 2022-2023 internships</h2>
-                <h2>For Summer 2023 internships</h2>
+
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h2 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                          Eligibility Checklist</a>
+                        </h2>
+                      </div>
+                      <div id="collapse1" class="panel-collapse collapse" aria-expanded="false">
+                        <div class="panel-body">
+
+
+                            <ul>
+                                <li>Do you have an offer of employment at an internship?
+                                    <ul>
+                                        <li><b>No</b>: CSE 197 and CSE 191 complement internships that you have been offered; 
+                                            these courses do not offer internship opportunities.</li>
+                                        <li>
+                                            If your internship has already started, you are not eligible to enroll in CSE 197. 
+                                            Exception: if you are currently working part-time and have been offered a subsequent full-time internship, please see below.
+                                        </li>
+                                        <li><b>Yes</b>: continue below.</li>
+                                    </ul>
+                                </li>
+                                <li>Is your major in CSE?
+                                    <ul>
+                                        <li><b>No</b>: See your major department for Field Study options.
+                                            I will not be supervising any students not majoring in CSE for CSE 191 and CSE 197.</li>
+                                        <li><b>Yes</b>: continue below.</li>
+                                    </ul>
+                                </li>
+                                <li>Does your internship satisfy all of the following criteria: 
+                                    (1) projects are related to your CSE major, 
+                                    (2) full-time (at least 30 hours of work each week and at least 8 weeks long), 
+                                    (3) paid, (4) on-site, hybrid, or remote work, (5) with a designated company mentor / supervisor.
+                                    <ul>
+                                        <li><b>No</b>: You are not eligible for CSE 197 but may be able to enroll in <a href="cse191syllabus.html">CSE 191</a>.</li>
+                                        <li><b>Yes</b>: continue below.</li>
+                                    </ul>
+                                </li>
+                                <li>Have you enrolled in CSE 197 before?
+                                    <ul>
+                                        <li><b>Yes</b>: A student may earn 4 units of elective credit once for CSE 197. 
+                                            If you are interested in academic credit for the purpose of international student CPT requirements, 
+                                            enroll in <a href="cse191syllabus.html">CSE 191</a> instead of CSE 197.</li>
+                                        <li><b>No</b>: continue below.</li>
+                                    </ul>
+                                </li>
+                                <li>Will you be part of a cohort of interns at your company participating in an established internship program?
+                                    <ul>
+                                        <li><b>No</b>: Prepare a paragraph explaining (1) how your employment is different from a 
+                                            full-time / regular job, (2) the learning goals you have for your time at the company, 
+                                            and (3) the structures available from your employer to help you meet these goals. 
+                                            Depending on this information, you may or may not be eligible for CSE 197.</li>
+                                        <li><b>Yes</b>: continue below.</li>
+                                    </ul>
+                                </li>
+                                <li>Will this be your first time employed by this company?
+                                    <ul>
+                                        <li><b>No</b>: Prepare a paragraph explaining (1) how your employment is different from a full-time / regular job, 
+                                            and (2) the learning goals you have for your new internship (as opposed to your previous internship(s) at this
+                                            company). Depending on this information, you may or may not be eligible for CSE 197. </li>
+                                        <li>If you currently work at the company part-time: you may still be eligible to take CSE 197 with a 
+                                            full-time internship at the same company. However, you must confirm that your full-time internship 
+                                            will be supervised by a mentor at the company and that there will be educational and/or novel 
+                                            components to your work that distinguish your experience from the part-time work before it.</li>
+                                        <li><b>Yes</b>: continue below.</li>
+                                    </ul>
+                                </li>
+                                <li>Are you planning to be in San Diego in the Fall (following your internship)?
+                                    <ul>
+                                        <li><b>No</b>: Where are you planning to be during the Fall quarter? 
+                                            You may still be eligible to enroll in CSE 197 but may have to complete alternate 
+                                            work in lieu of presenting at the Summer Internship Symposium. 
+                                            You must notify me before enrolling in the course that you are interested in this option.</li>
+                                        <li><b>Yes</b>: there will be a Summer Internship Symposium (date and details TBA) 
+                                            where each student will be expected to present their internship and CSE 197 experiences. 
+                                            If you plan to enroll in CSE 197, stay tuned for the date of the symposium and make sure 
+                                            you have no schedule conflicts.</li>
+                                    </ul>
+                                </li>
+                            </ul>  
+
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h2 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                          Academic Year 2022-2023 Internships</a>
+                        </h2>
+                      </div>
+                      <div id="collapse2" class="panel-collapse collapse" aria-expanded="false">
+                        <div class="panel-body">
+
+                            If you have confirmed the above criteria for eligibility, do the following to complete your application:
+                            <ol>
+                                <li>At least one week before the start date of your internship: Fill out the 
+                                    <a href="https://forms.gle/PxxB6X5CgE1dQR4h6" target="_blank">2022 application form</a> to record the details of your internship.</li>
+                                <li>During the enrollment period for the quarter in which you enroll in CSE 197: 
+                                    Complete <a href="https://academicaffairs.ucsd.edu/Modules/Students/PreAuth/Default.aspx" target="_blank">EASy (Request Type: Special Studies)</a>
+                                    Upload your internship offer letter as part of your EASy request. 
+                                    Your documentation should include confirmation that your internship is technical in nature and meets the eligibility criteria above.  
+                                    If your formal offer letter doesn't include key pieces of information (e.g. start and end dates), also upload other 
+                                    documentation from the company that does.
+                                </li>
+                                <li>If relevant, submit an <a href="https://iportal.ucsd.edu/" target="_blank">iPortal</a> request for CPT approval.
+                                </li>
+                            </ol>
+                            <p>
+                            Within one week, your application will be verified for eligibility by Prof. Minnes.
+                            Once you are notified by the EASy system and/or Prof. Minnes that your application has been approved, 
+                            you will be considered part of the CSE 197 cohort (regardless of when you officially add CSE 197 to your 
+                            TritonLink schedule). <b>Check your @ucsd.edu email regularly for course updates.</b>
+                            </p>
+                            <p>
+                            You will be notified by CSE Student Affairs when you are cleared to add CSE 197 to your schedule 
+                            on TritonLink.  Make sure to enroll for the class <b>P/NP</b> ; students who complete the course 
+                            successfully and enroll for a letter grade will be assigned a B by default.
+                            </p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h2 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                          Summer 2023 Internships</a>
+                        </h2>
+                      </div>
+                      <div id="collapse3" class="panel-collapse collapse" aria-expanded="false">
+                        <div class="panel-body">
+
+                            If you have confirmed the above criteria for eligibility, do the following to complete your application:
+                            <ol>
+                                <li>At least one week before the start date of your internship: Fill out the 
+                                    <a href="https://forms.gle/PGWbeDhxYYYgSe179" target="_blank">2023 application form</a> to record the details of your internship.</li>
+                                <li>During the enrollment period for the quarter in which you enroll in CSE 197: 
+                                    Complete <a href="https://academicaffairs.ucsd.edu/Modules/Students/PreAuth/Default.aspx" target="_blank">EASy (Request Type: Special Studies)</a>
+                                    Upload your internship offer letter as part of your EASy request. 
+                                    Your documentation should include confirmation that your internship is technical in nature and meets the eligibility criteria above.  
+                                    If your formal offer letter doesn't include key pieces of information (e.g. start and end dates), also upload other 
+                                    documentation from the company that does.
+                                </li>
+                                <li>If relevant, submit an <a href="https://iportal.ucsd.edu/" target="_blank">iPortal</a> request for CPT approval.
+                                </li>
+                            </ol>
+                            <p>
+                            Within one week, your application will be verified for eligibility by Prof. Minnes.
+                            Once you are notified by the EASy system and/or Prof. Minnes that your application has been approved, 
+                            you will be considered part of the CSE 197 cohort (regardless of when you officially add CSE 197 to your 
+                            TritonLink schedule). <b>Check your @ucsd.edu email regularly for course updates.</b>
+                            </p>
+                            <p>
+                            You will be notified by CSE Student Affairs when you are cleared to add CSE 197 to your schedule 
+                            on TritonLink.  Make sure to enroll for the class <b>P/NP</b> ; students who complete the course 
+                            successfully and enroll for a letter grade will be assigned a B by default.
+                            </p>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
             </div>
+        </div>
+
+        <div class="row no-gutters justify-content-around align-content-center info">
 
             <a name="Syllabus"></a>
-            <div tabindex="2" class="col-sm-12 no-gutters">
+            <div tabindex="5" class="col-sm-12 no-gutters">
                 <hr/>
                 <h3><a href="#assignments">Quick Link to Course Assignments</a></h3>
                 
@@ -674,7 +845,8 @@
                 </dl>
 
             </div>
-	</div>
+        </div>
+	    </div>
 
 	<!-- Footer -->
 	<footer class="footer">
@@ -687,8 +859,6 @@
   
   	</footer>
   	<!-- Footer -->
-
-	  <script src="/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
 
   </body>
 </html>
