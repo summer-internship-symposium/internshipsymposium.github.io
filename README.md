@@ -13,7 +13,7 @@ The site is completely built in HTML and CSS, and there is no build system – i
 The [Bootstrap](https://getbootstrap.com/docs/4.0/) elements that are used are: grid (rows and columns), nav, and carousel. The media queries in symposium.css are designed around specific widths for the title.
 
 ## Deploying
-The script in [.github/workflows](.github/workflows) is responsible for copying the files to [https://internshipsymposium.ucsd.edu](https://internshipsymposium.ucsd.edu) when we trigger the action. It has a SSH key for the pace user stored as a repository secret, and uses scp to copy and overwrite all the files in the relevant target directory on that host.
+The script in [.github/workflows](.github/workflows) is responsible for copying the files to [https://internshipsymposium.ucsd.edu](https://internshipsymposium.ucsd.edu) when we trigger the action. It has a SSH key for the internshipsymposium user stored as a repository secret, and uses scp to copy and overwrite all the files in the relevant target directory on that host.
 
 ### Understanding [.github/workflows/main.yml](.github/workflows/main.yml): 
 The environment variables are set so that files can be copied to the internshipsymposium.ucsd.edu server automatically
