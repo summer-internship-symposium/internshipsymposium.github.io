@@ -15,6 +15,14 @@ The [Bootstrap](https://getbootstrap.com/docs/4.0/) elements that are used are: 
 ## Deploying
 The script in [.github/workflows](.github/workflows) is responsible for copying the files to [https://internshipsymposium.ucsd.edu](https://internshipsymposium.ucsd.edu) when we trigger the action. It has a SSH key for the internshipsymposium user stored as a repository secret, and uses scp to copy and overwrite all the files in the relevant target directory on that host.
 
+UPDATE: UCSD OEC no longer allows copying files to their servers from off-campus sources. GitHub Actions use off-campus sources for this script so it no longer works.
+
+Instead: in a local Terminal while on UCSD networks, run 
+
+scp -r ./* internshipsymposium@internshipsymposium.ucsd.edu:~/htdocs/
+
+and use server password for internshipsymposium@internshipsymposium.ucsd.edu
+
 ### Understanding [.github/workflows/main.yml](.github/workflows/main.yml): 
 The environment variables are set so that files can be copied to the internshipsymposium.ucsd.edu server automatically
 (without entering the password each time). To set this up, a public/private rsa key pair is needed.
