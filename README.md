@@ -23,6 +23,14 @@ scp -r ./* internshipsymposium@internshipsymposium.ucsd.edu:~/htdocs/
 
 and use server password for internshipsymposium@internshipsymposium.ucsd.edu
 
+**1/30/2025 Update from OEC** Use
+ssh internshipsymposium@mywebsite.eng.ucsd.edu
+(from a campus network or VPN)
+
+sftp internshipsymposium@mywebsite.eng.ucsd.edu
+cd htdocs
+put -r ./*
+
 ### Understanding [.github/workflows/main.yml](.github/workflows/main.yml): 
 The environment variables are set so that files can be copied to the internshipsymposium.ucsd.edu server automatically
 (without entering the password each time). To set this up, a public/private rsa key pair is needed.

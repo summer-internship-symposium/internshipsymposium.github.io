@@ -5,14 +5,18 @@
 	--uc-orange: #FC8900;
 	--uc-grey: #B6B1A9;
 	--dark-grey: #57595b;
-	--Large: 30px;
-	--large: 16px;
-	--Normal: 20px;
-	--normal: 18px;
-	--Medium: 18px;
-	--medium: 16px;
-	--Small: 16px;
-	--small: 14px;
+	--large-computer: 30px;
+	--large-multiplier: 5vw;
+	--large-mobile: 16px;
+	--normal-computer: 20px;
+	--normal-multiplier: 3vw;
+	--normal-mobile: 18px;
+	--medium-computer: 18px;
+	--medium-multiplier: 2vw;
+	--medium-mobile: 16px;
+	--small-computer: 16px;
+	--small-multiplier: 1vw;
+	--small-mobile: 14px;
 	--assignmentprompt: "In your writing be honest,  empathetic, and analytical about your experiences. Remember: Each weekly post should have quick notes (bullet points are fine) and a deeper reflection (at least 300 words, but more is fine). The title of each post should include your name, group name, and the week number.";	
 }
 
@@ -24,7 +28,7 @@
 
 .navbar .nav-item, .nav-link{
 	font-weight: bold;
-	font-size: var(--small);
+	font-size: var(--small-mobile);
 	color: white;
 	display: inline;
 	margin-right: 2px;
@@ -121,15 +125,12 @@ dt {
 	margin-top: 10px;
   }
 
-/* Mobile: banner image above centered text */
-@media screen and (max-width: 850px) {
-	
 	header {
-		font-size: var(--large);
+		font-size:  clamp(var(--large-mobile),var(--large-multiplier),var(--large-computer));
 	}
 
 	header h1 {
-		font-size: var(--large);
+		font-size:  clamp(var(--normal-mobile),var(--normal-multiplier),var(--normal-computer));
 		font-weight: bold;
 		text-align: left;
 		padding-top: 10px;
@@ -137,7 +138,7 @@ dt {
 	}
 
 	.main-content h1 {
-		font-size: var(--normal);
+		font-size:  clamp(var(--normal-mobile),var(--normal-multiplier),var(--normal-computer));
 		font-weight: bold;
 		color: var(--uc-blue);
 		text-align: left;
@@ -149,7 +150,7 @@ dt {
 	}
 
 	.blocks h1 {
-		font-size: var(--small);
+		font-size:  clamp(var(--small-mobile),var(--small-multiplier),var(--small-computer));
 		text-align: left;
 		font-weight: bold;
 		color: var(--uc-blue);
@@ -157,7 +158,7 @@ dt {
 	}
 
 	h2 {
-		font-size: var(--medium);
+		font-size:  clamp(var(--medium-mobile),var(--medium-multiplier),var(--medium-computer));
 		text-align: left;
 		font-weight: bold;
 		display: block;
@@ -166,7 +167,7 @@ dt {
 	}
 
 	h3 {
-		font-size: var(--small);
+		font-size:  clamp(var(--small-mobile),var(--small-multiplier),var(--small-computer));
 		text-align: right;
 		font-weight: bold;
 		display: block;
@@ -174,75 +175,12 @@ dt {
 	}
 
 	p {
-		font-size: var(--small);
+		font-size:  clamp(var(--small-mobile),var(--small-multiplier),var(--small-computer));
 		text-align: left;
 	}
 
 	.blocks {
-		font-size: var(--small);
+		font-size: clamp(var(--small-mobile),var(--small-multiplier),var(--small-computer));
 		margin: 0px;
 		padding: 0px;
 	}
-
-}
-
-/* Large viewport: banner side-by-side image and text */
-@media screen and (min-width: 850px) {
-
-	header {
-		font-size: var(--Large);
-	}
-	header h1 {
-		font-size: var(--Large);
-		text-align: left;
-		padding-top: 40px;
-		display: inline;
-	}
-
-	header .shorten {
-		display: none;
-	}	
-
-	.main-content h1 {
-		font-size: var(--Normal);
-		font-weight: bold;
-		color: var(--uc-blue);
-		text-align: left;
-		margin-bottom:15px;		
-	}
-	
-	.blocks h1 {
-		font-size: var(--Small);
-		text-align: left;
-		font-weight: bold;
-		color: var(--uc-blue);
-		margin-bottom: 5px;
-	}
-
-	h2 {
-		font-size: var(--Medium);
-		text-align: left;
-		font-weight: bold;
-		display: block;
-		margin: 0px;
-		padding-top: 10px;
-	}
-
-	h3 {
-		font-size: var(--Small);
-		text-align: right;
-		font-weight: bold;
-		display: block;
-		margin: 15px;
-	}
-
-	p {
-		font-size: var(--Small);
-		text-align: left;
-	}
-
-	.blocks {
-		font-size: var(--Small);
-	}
-
-}
