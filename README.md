@@ -43,3 +43,9 @@ The environment variables are set so that files can be copied to the internships
 To deploy, use the Actions interface, selecting `Deploy to internshipsymposium.ucsd.edu` and clicking the button `Run workflow`, `Use workflow from Branch: main`, `Run workflow`.
 
 
+
+## Converting .pdf posters to (small) .png images
+Use 
+magick ORIGINAL_FILE_NAME.pdf -qualtiy 75 OUTPUT_FILE_NAME.png
+
+[text](<../../Library/CloudStorage/GoogleDrive-minnes@ucsd.edu/Shared drives/CSE 19x Internship Companion Courses/Symposium_2025/2025SISposters/TS.HARO.MELANIE.2025 - Melanie Haro Mendoza.pdf>) [text](<../../Library/CloudStorage/GoogleDrive-minnes@ucsd.edu/Shared drives/CSE 19x Internship Companion Courses/Symposium_2025/2025SISposters/PPG.BOSLER.KATRINA.2025 - Katrina Bosler.pdf>) [text](<../../Library/CloudStorage/GoogleDrive-minnes@ucsd.edu/Shared drives/CSE 19x Internship Companion Courses/Symposium_2025/2025SISposters/PPG.VORA.YASHIL.2025 - Yashil Vora.pdf>)
